@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "dmhsisfinanceiroapiproperties",
+      "type": "br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties",
+      "sourceType": "br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties"
+    },
+    {
+      "name": "dmhsisfinanceiroapiproperties.config-seguranca",
+      "type": "br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties$ConfigSeguranca",
+      "sourceType": "br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties",
+      "sourceMethod": "public br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties.ConfigSeguranca getConfigSeguranca() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "dmhsisfinanceiroapiproperties.config-seguranca.enable-https",
+      "type": "java.lang.Boolean",
+      "sourceType": "br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties$ConfigSeguranca"
+    },
+    {
+      "name": "dmhsisfinanceiroapiproperties.origin-cors-permitida",
+      "type": "java.lang.String",
+      "sourceType": "br.net.hartwig.dmhsisfinanceiro.config.properties.DmhSisFinanceiroApiProperties"
+    }
+  ],
+  "hints": []
+}

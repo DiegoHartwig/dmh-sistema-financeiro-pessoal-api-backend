@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: dmh-sis-financeiro
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: hartwig
+Implementation-Vendor-Id: br.net.hartwig.dmh-sis-financeiro
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/dmh-sis-financeiro
+Created-By: Maven Integration for Eclipse
+
