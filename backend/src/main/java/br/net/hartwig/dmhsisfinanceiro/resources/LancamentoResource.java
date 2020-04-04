@@ -30,6 +30,7 @@ import br.net.hartwig.dmhsisfinanceiro.event.ResourceCreatedEvent;
 import br.net.hartwig.dmhsisfinanceiro.exceptionhandler.ResourceExceptionHandler.Erro;
 import br.net.hartwig.dmhsisfinanceiro.repositories.LancamentoRepository;
 import br.net.hartwig.dmhsisfinanceiro.repositories.filter.LancamentoFilter;
+import br.net.hartwig.dmhsisfinanceiro.repositories.projections.ResumoLancamento;
 import br.net.hartwig.dmhsisfinanceiro.services.LancamentoService;
 import br.net.hartwig.dmhsisfinanceiro.services.exception.PessoaInativaOuInexisteException;
 
@@ -53,6 +54,12 @@ public class LancamentoResource {
 	@PreAuthorize("hasAuthority('ROLE_PESQUISAR_LANCAMENTO')")
 	public Page<Lancamento> pesquisar(LancamentoFilter lancamentoFilter, Pageable pageable) {
 		return lancamentoRepository.filtrar(lancamentoFilter, pageable);
+	}
+	
+	@GetMapping(params = "resumo")
+	@PreAuthorize("hasAuthority('ROLE_PESQUISAR_LANCAMENTO')")
+	public Page<ResumoLancamento> resumoLancamento (LancamentoFilter lancamentoFilter, Pageable pageable) {
+		return lancamentoRepository.resumoLancamento(lancamentoFilter, pageable);
 	}
 
 	@GetMapping("/{id}")
